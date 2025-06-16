@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Astro v5.7.10" />
-    <title>Cart - Codeigniter E-Commerce</title>
+    <title>Checkout - Codeigniter E-Commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/" />
 
@@ -64,57 +64,67 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3">
-            <div class="card-header">Cart</div>
+        <!-- penggunaan col di bosstrap cari grid -->
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">Formulir Alamat Pengiriman</div>
             <div class="card-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Produk</th>
-                    <th class="text-center">Harga</th>
-                    <th class="text-center">Jumlah</th>
-                    <th class="text-center">Subtotal</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p><img src="https://placehold.co/50x50" alt="" class="me-2"/><strong>Produk Title</strong></p>
-                    </td>
-                    <td class="text-center">Rp.100.000,-</td>
-                    <td>
-                      <form action="">
-                        <div class="input-group">
-                          <input type="number" class="form-control text-center" value="1" />
-                          <div class="input-group-append">
-                            <button class="btn btn-info" type="submit"><i class="fas fa-check"></i></button>
-                          </div>
-                        </div>
-                      </form>
-                    </td>
-                    <td class="text-center">Rp100.000,-</td>
-                    <td>
-                      <form action="">
-                        <button class="btn btn-danger" type="submit"><i class="fas fa-trash-alt"></i></button>
-                      </form>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="3"><strong>Total:</strong></td>
-                    <td class="text-center"><strong>Rp.100.000,-</strong></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+              <form action="">
+                <div class="form-group">
+                  <label for="">Nama</label>
+                  <input type="text" class="form-control" name="name" placeholder="masukkan nama penerima" />
+                  <small class="form-text text-danger">Nama Harus diisi.</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Alamat</label>
+                  <textarea name="address" id="" cols="30" rows="5" class="form-control"></textarea>
+                  <small class="form-text text-danger">Alamat Harus diisi.</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Telepon</label>
+                  <input type="text" class="form-control" name="phone" placeholder="masukkan nomor Telepon penerima" />
+                  <small class="form-text text-danger">Nomor Telepon Harus diisi.</small>
+                </div>
+                <button class="btn btn-primary" type="submit">Simpan</button>
+              </form>
             </div>
-            <!-- untuk mengarahkan halam cheack out / home page -->
-            <div class="card-footer">
-                <!-- Float Rigtht ganti float -end -->
-              <a href="/cheackout.html" class="btn btn-success float-end">Pembayaran <i class="fas fa-angle-right"></i></fas></a>
-              <a href="/index.html" class="btn btn-warning text-white"><i class="fas fa-angle-left"></i>Kembali Belanja</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3">
+                <div class="card-header">Cart</div>
 
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Produk</th>
+                        <th>Qty</th>
+                        <th>Harga</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Produk Title</td>
+                        <td>3</td>
+                        <td>Rp300.000,-</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Sub Total</td>
+                        <td>Rp300.000,-</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2">Total</th>
+                        <th>Rp300.000,-</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
