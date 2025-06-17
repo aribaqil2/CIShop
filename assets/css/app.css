@@ -75,4 +75,19 @@ body {
   padding-top: 4.5rem;
 }
 
+.form-group {
+  margin-bottom: 1rem; /* Memberi jarak bawah antar form-group */
+}
 
+.form-group > label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+select,
+button {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
