@@ -6,16 +6,12 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Astro v5.7.10" />
-    <title>Orders - Codeigniter E-Commerce</title>
+    <title>Orders Confirm - Codeigniter E-Commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/" />
 
-    <!-- Boostrap css -->
-    <link href="/assets/libs/bootstrap/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" />
-
+    <link href="/assets/libs/bootstrap/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/app.css" />
-
-    <!-- fontawesome CSS -->
     <link rel="stylesheet" href="assets/libs/fontsawesome/css/all.min.css" />
   </head>
   <body>
@@ -74,53 +70,42 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-9">
           <div class="card">
-            <div class="card-header">Daftar Order</div>
-            <div class="card-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Nomor</th>
-                    <th>Tanggal</th>
-                    <th>Total</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="/orders-detail.html"><strong>#09283492</strong></a>
-                    </td>
-                    <td>#2018/09/08</td>
-                    <td>Rp.300.000,-</td>
-                    <td>
-                      <span class="badge rounded-pill bg-warning">Menunggu pembayaran</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="/orders-detail.html"><strong>#09283492</strong></a>
-                    </td>
-                    <td>#2018/09/09</td>
-                    <td>Rp.300.000,-</td>
-                    <td>
-                      <span class="badge rounded-pill bg-success">Dikirim</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="/orders-detail.html"><strong>#09283492</strong></a>
-                    </td>
-                    <td>#2018/09/02</td>
-                    <td>Rp.300.000,-</td>
-                    <td>
-                      <span class="badge rounded-pill bg-danger">Dibatalkan</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="card-header">
+              Konfirmasi Order #908123
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-info">Menunggu Pembayaran</span>
+              </div>
             </div>
+            <form action="">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Transaksi</label>
+                  <input type="text" class="form-control" value="0123123" readonly />
+                </div>
+                <div class="form-group">
+                  <label for="">Dari Rekening a/n</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Sebesar</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Catatan</label>
+                  <textarea name="description" id="" cols="30" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="">Bukti Transfer</label>
+                  <input type="file" name="image" id="" />
+                </div>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-success">Konfirmasi pembayaran</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

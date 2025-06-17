@@ -6,16 +6,12 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Astro v5.7.10" />
-    <title>Orders - Codeigniter E-Commerce</title>
+    <title>Orders Detail - Codeigniter E-Commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/" />
 
-    <!-- Boostrap css -->
-    <link href="/assets/libs/bootstrap/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" />
-
+    <link href="/assets/libs/bootstrap/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/app.css" />
-
-    <!-- fontawesome CSS -->
     <link rel="stylesheet" href="assets/libs/fontsawesome/css/all.min.css" />
   </head>
   <body>
@@ -74,52 +70,46 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-9">
           <div class="card">
-            <div class="card-header">Daftar Order</div>
+            <div class="card-header">
+              Daetail Order #908123
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-info">Menunggu Pembayaran</span>
+              </div>
+            </div>
             <div class="card-body">
+              <p>Nama : Nama penerima</p>
+              <p>Telepon : 028340239</p>
+              <p>Alamat : jl.sukun 233</p>
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Nomor</th>
-                    <th>Tanggal</th>
-                    <th>Total</th>
-                    <th>Status</th>
+                    <th>Produk</th>
+                    <th class="text-center">Harga</th>
+                    <th class="text-center">Jumlah</th>
+                    <th class="text-center">Subtotal</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      <a href="/orders-detail.html"><strong>#09283492</strong></a>
+                      <p><img src="https://placehold.co/50x50" alt="" class="me-2" /><strong>Produk Title</strong></p>
                     </td>
-                    <td>#2018/09/08</td>
-                    <td>Rp.300.000,-</td>
-                    <td>
-                      <span class="badge rounded-pill bg-warning">Menunggu pembayaran</span>
-                    </td>
+                    <td class="text-center">Rp.100.000,-</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">Rp100.000,-</td>
                   </tr>
                   <tr>
-                    <td>
-                      <a href="/orders-detail.html"><strong>#09283492</strong></a>
-                    </td>
-                    <td>#2018/09/09</td>
-                    <td>Rp.300.000,-</td>
-                    <td>
-                      <span class="badge rounded-pill bg-success">Dikirim</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="/orders-detail.html"><strong>#09283492</strong></a>
-                    </td>
-                    <td>#2018/09/02</td>
-                    <td>Rp.300.000,-</td>
-                    <td>
-                      <span class="badge rounded-pill bg-danger">Dibatalkan</span>
-                    </td>
+                    <td colspan="3"><strong>Total:</strong></td>
+                    <td class="text-center"><strong>Rp.100.000,-</strong></td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div class="card-footer">
+                <a href="/orders-confirm.html" class="btn btn-success">Konfirmasi pembayaran</a>
             </div>
           </div>
         </div>
